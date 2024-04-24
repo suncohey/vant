@@ -19,6 +19,153 @@ Vant follows [Semantic Versioning 2.0.0](https://semver.org/lang/zh-CN/).
 
 ## Details
 
+### v4.8.11
+
+`2024-04-14`
+
+#### New Features 🎉
+
+- feat(DropdownMenu): add disabled for option by [@inottn](https://github.com/inottn) in [#12785](https://github.com/youzan/vant/pull/12785)
+
+#### Bug Fixes 🐞
+
+- fix: warning `is not a valid value for v-model` in JetBrains IDE by [@anyesu](https://github.com/anyesu) in [#12787](https://github.com/youzan/vant/pull/12787)
+- fix(Cli): remove site tsconfig by [@chenjiahan](https://github.com/chenjiahan) in [#12792](https://github.com/youzan/vant/pull/12792)
+
+#### Document 📖
+
+- docs(list): update Error loading module code by [@wangjue666](https://github.com/wangjue666) in [#12778](https://github.com/youzan/vant/pull/12778)
+
+#### Other Changes
+
+- chore(deps): update dependency eslint-plugin-vue to ^9.24.1 by [@renovate](https://github.com/renovate) in [#12774](https://github.com/youzan/vant/pull/12774)
+- chore(deps): bump Rsbuild v0.6 by [@chenjiahan](https://github.com/chenjiahan) in [#12790](https://github.com/youzan/vant/pull/12790)
+
+#### New Contributors
+
+- [@wangjue666](https://github.com/wangjue666) made their first contribution in [#12778](https://github.com/youzan/vant/pull/12778)
+- [@anyesu](https://github.com/anyesu) made their first contribution in [#12787](https://github.com/youzan/vant/pull/12787)
+
+### v4.8.10
+
+`2024-04-06`
+
+#### New Features 🎉
+
+- feat(TimePicker): support confirm and getSelectedTime methods by [@bluesky335](https://github.com/bluesky335) in [#12761](https://github.com/youzan/vant/pull/12761)
+- feat(DatePicker): support confirm and getSelectedDate method by [@bluesky335](https://github.com/bluesky335) in [#12762](https://github.com/youzan/vant/pull/12762)
+- feat(Coupon): support for checkbox usage by [@CatsAndMice](https://github.com/CatsAndMice) in [#12744](https://github.com/youzan/vant/pull/12744)
+
+#### Other Changes
+
+- chore(deps): update dependency vite to v5.0.13 [security] by [@renovate](https://github.com/renovate) in [#12767](https://github.com/youzan/vant/pull/12767)
+- chore(deps): update all patch dependencies by [@renovate](https://github.com/renovate) in [#12756](https://github.com/youzan/vant/pull/12756)
+- chore(deps): update dependency [@types](https://github.com/types)/lodash to ^4.17.0 by @renovate in [#12757](https://github.com/youzan/vant/pull/12757)
+- chore: correct return type of getSelectedTime by [@chenjiahan](https://github.com/chenjiahan) in [#12768](https://github.com/youzan/vant/pull/12768)
+- refactor(Coupon): simplify the checkbox usage by [@chenjiahan](https://github.com/chenjiahan) in [#12771](https://github.com/youzan/vant/pull/12771)
+
+#### New Contributors
+
+- [@bluesky335](https://github.com/bluesky335) made their first contribution in [#12761](https://github.com/youzan/vant/pull/12761)
+
+### v4.8.9
+
+`2024-04-06`
+
+Invalid version, please do not use it.
+
+### v4.8.8
+
+`2024-03-31`
+
+#### New Features 🎉
+
+- feat(image-preview): export onLoad and style for image slot by [@chouchouji](https://github.com/chouchouji) in [#12740](https://github.com/youzan/vant/pull/12740)
+- feat(AddressList): add event param for click-item by [@chenjiahan](https://github.com/chenjiahan) in [#12748](https://github.com/youzan/vant/pull/12748)
+
+#### Bug Fixes 🐞
+
+- fix(floating-bubble): update offset when the value changed by [@chouchouji](https://github.com/chouchouji) in [#12730](https://github.com/youzan/vant/pull/12730)
+- fix(vant-cli): support defineOptions named by [@wChenonly](https://github.com/wChenonly) in [#12734](https://github.com/youzan/vant/pull/12734)
+- fix(PickerGroup): rendering correctly when using v-for by [@inottn](https://github.com/inottn) in [#12732](https://github.com/youzan/vant/pull/12732)
+- fix(TextEllipsis): should recalculate the ellipsis state when the component is activated by [@inottn](https://github.com/inottn) in [#12741](https://github.com/youzan/vant/pull/12741)
+
+#### Document 📖
+
+- docs(button): Keep Chinese and English documents consistent by [@chouchouji](https://github.com/chouchouji) in [#12708](https://github.com/youzan/vant/pull/12708)
+- docs(cell): correct the type of label by [@chouchouji](https://github.com/chouchouji) in [#12721](https://github.com/youzan/vant/pull/12721)
+- docs(ImagePreview): add image slot scale guide by [@chenjiahan](https://github.com/chenjiahan) in [#12751](https://github.com/youzan/vant/pull/12751)
+
+#### Other Changes
+
+- chore(deps): update dependency vue-router to v4.3.0 by [@renovate](https://github.com/renovate) in [#12702](https://github.com/youzan/vant/pull/12702)
+- chore(deps): update dependency esbuild to ^0.20.0 by [@renovate](https://github.com/renovate) in [#12696](https://github.com/youzan/vant/pull/12696)
+- chore(workflow): let renovate bump package.json by [@chenjiahan](https://github.com/chenjiahan) in [#12714](https://github.com/youzan/vant/pull/12714)
+- chore(deps): update dependency eslint to ^8.57.0 by [@renovate](https://github.com/renovate) in [#12723](https://github.com/youzan/vant/pull/12723)
+- chore(docs): update the vue3-vant-mobile reference by [@CharleeWa](https://github.com/CharleeWa) in [#12735](https://github.com/youzan/vant/pull/12735)
+- chore(deps): update dependency commander to ^11.1.0 by [@renovate](https://github.com/renovate) in [#12718](https://github.com/youzan/vant/pull/12718)
+- chore(deps): update dependency enquirer to v2.4.1 by [@renovate](https://github.com/renovate) in [#12695](https://github.com/youzan/vant/pull/12695)
+- chore(deps): update dependency [@vue](https://github.com/vue)/test-utils to ^2.4.5 by @renovate in [#12716](https://github.com/youzan/vant/pull/12716)
+- chore(deps): bump Rsbuild v0.5 by [@chenjiahan](https://github.com/chenjiahan) in [#12747](https://github.com/youzan/vant/pull/12747)
+- chore(deps): update dependency eslint-config-prettier to ^9.1.0 by [@renovate](https://github.com/renovate) in [#12724](https://github.com/youzan/vant/pull/12724)
+- chore(deps): update dependency fs-extra to ^11.2.0 by [@renovate](https://github.com/renovate) in [#12745](https://github.com/youzan/vant/pull/12745)
+- chore(deps): update dependency highlight.js to ^11.9.0 by [@renovate](https://github.com/renovate) in [#12746](https://github.com/youzan/vant/pull/12746)
+- chore(deps): update dependency fast-glob to ^3.3.2 by [@renovate](https://github.com/renovate) in [#12731](https://github.com/youzan/vant/pull/12731)
+- chore(deps): update dependency less to ^4.2.0 by [@renovate](https://github.com/renovate) in [#12752](https://github.com/youzan/vant/pull/12752)
+- chore(workflow): let renovate group patch updates by [@chenjiahan](https://github.com/chenjiahan) in [#12754](https://github.com/youzan/vant/pull/12754)
+
+#### New Contributors
+
+- [@CharleeWa](https://github.com/CharleeWa) made their first contribution in [#12735](https://github.com/youzan/vant/pull/12735)
+
+### v4.8.7
+
+`2024-03-18`
+
+#### Other Changes
+
+- Revert "chore(deps): update dependency typescript to v5.4.2" by [@renovate](https://github.com/renovate) in [#12700](https://github.com/youzan/vant/pull/12700)
+- chore: Update homepage by [@yoyo837](https://github.com/yoyo837) in [#12704](https://github.com/youzan/vant/pull/12704)
+
+### v4.8.6
+
+`2024-03-17`
+
+#### New Features 🎉
+
+- feat(ImagePreview): add vertical prop by [@suncohey](https://github.com/suncohey) in [#12660](https://github.com/youzan/vant/pull/12660)
+- feat(signature): export clear and submit method by [@chouchouji](https://github.com/chouchouji) in [#12654](https://github.com/youzan/vant/pull/12654)
+- feat: support unplugin-auto-import plugin by [@DragonnZhang](https://github.com/DragonnZhang) in [#12679](https://github.com/youzan/vant/pull/12679)
+- feat(ActionSheet): add icon support to the actions data by [@wjw-gavin](https://github.com/wjw-gavin) in [#12671](https://github.com/youzan/vant/pull/12671)
+
+#### Bug Fixes 🐞
+
+- fix(ImagePreview): allow user to swipe to next image when the current image is moved to the edge by [@inottn](https://github.com/inottn) in [#12666](https://github.com/youzan/vant/pull/12666)
+- fix(ActionSheet): icon class name by [@chenjiahan](https://github.com/chenjiahan) in [#12701](https://github.com/youzan/vant/pull/12701)
+
+#### Document 📖
+
+- docs(ImagePreview): add vertical prop by [@chenjiahan](https://github.com/chenjiahan) in [#12663](https://github.com/youzan/vant/pull/12663)
+- docs: change tab's 'Before Change' into a real async function by [@gxy5202](https://github.com/gxy5202) in [#12693](https://github.com/youzan/vant/pull/12693)
+
+#### Other Changes
+
+- chore(deps): bump Rsbuild 0.4.12 by [@chenjiahan](https://github.com/chenjiahan) in [#12665](https://github.com/youzan/vant/pull/12665)
+- chore(deps): update dependency [@vue](https://github.com/vue)/test-utils to v2.4.5 by @renovate in [#12681](https://github.com/youzan/vant/pull/12681)
+- chore(deps): update dependency autoprefixer to v10.4.18 by [@renovate](https://github.com/renovate) in [#12682](https://github.com/youzan/vant/pull/12682)
+- chore(workflow): disable dependency dashboard by [@chenjiahan](https://github.com/chenjiahan) in [#12686](https://github.com/youzan/vant/pull/12686)
+- chore(deps): update dependency prettier to v3.2.5 by [@renovate](https://github.com/renovate) in [#12685](https://github.com/youzan/vant/pull/12685)
+- chore(deps): update rsbuild to v0.4.15 by [@renovate](https://github.com/renovate) in [#12688](https://github.com/youzan/vant/pull/12688)
+- chore(deps): update dependency eslint to v8.57.0 by [@renovate](https://github.com/renovate) in [#12697](https://github.com/youzan/vant/pull/12697)
+- chore(deps): update dependency typescript to v5.4.2 by [@renovate](https://github.com/renovate) in [#12700](https://github.com/youzan/vant/pull/12700)
+
+#### New Contributors
+
+- [@chouchouji](https://github.com/chouchouji) made their first contribution in [#12654](https://github.com/youzan/vant/pull/12654)
+- [@renovate](https://github.com/renovate) made their first contribution in [#12681](https://github.com/youzan/vant/pull/12681)
+- [@gxy5202](https://github.com/gxy5202) made their first contribution in [#12693](https://github.com/youzan/vant/pull/12693)
+- [@DragonnZhang](https://github.com/DragonnZhang) made their first contribution in [#12679](https://github.com/youzan/vant/pull/12679)
+
 ### v4.8.5
 
 `2024-02-25`

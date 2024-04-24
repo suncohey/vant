@@ -185,6 +185,20 @@ export default {
 };
 ```
 
+When you customize the image through the `image` slot, you can bind the `style` and `onLoad` callback through the params of the slot, which can allow the `<img>` tag to support image scaling.
+
+```html
+<van-image-preview
+  v-model:show="show"
+  :images="images"
+  :close-on-click-image="false"
+>
+  <template #image="{ src, style, onLoad }">
+    <img :style="[{ width: '100%' }, style]" @load="onLoad" />
+  </template>
+</van-image-preview>
+```
+
 ## API
 
 ### Methods
@@ -212,6 +226,7 @@ Vant exports following ImagePreview utility functions:
 | doubleScale `v4.7.2` | Whether to enable double tap zoom gesture. When disabled, the image preview will be closed immediately upon clicking | _boolean_ | `true` |
 | closeOnClickImage `v4.8.3` | Whether to close when image is clicked | _boolean_ | `true` |
 | closeOnClickOverlay `v4.6.4` | Whether to close when overlay is clicked | _boolean_ | `true` |
+| vertical `v4.8.6` | Whether to enable vertical gesture sliding | _boolean_ | `false` |
 | beforeClose | Callback function before close | _(action) => boolean \| Promise_ | - |
 | className | Custom className | _string \| Array \| object_ | - |
 | maxZoom | Max zoom | _number \| string_ | `3` |
@@ -240,6 +255,7 @@ Vant exports following ImagePreview utility functions:
 | close-on-popstate | Whether to close when popstate | _boolean_ | `true` |
 | close-on-click-image `v4.8.3` | Whether to close when image is clicked | _boolean_ | `true` |
 | close-on-click-overlay `v4.6.4` | Whether to close when overlay is clicked | _boolean_ | `true` |
+| vertical `v4.8.6` | Whether to enable vertical gesture sliding | _boolean_ | `false` |
 | class-name | Custom className (apply to Popup in image preview) | _string \| Array \| object_ | - |
 | max-zoom | Max zoom | _number \| string_ | `3` |
 | min-zoom | Min zoom | _number \| string_ | `1/3` |
@@ -300,7 +316,7 @@ imagePreviewRef.value?.swipeTo(1);
 | --- | --- | --- |
 | index | Custom index | _{ index: index of current image }_ |
 | cover | Custom content that covers the image preview | - |
-| image | Custom image content | _{ src: current image src }_ |
+| image | Custom image content | _{ src: current image src, onLoad: load image, style: current image style }_ |
 
 ### onClose Parameters
 
