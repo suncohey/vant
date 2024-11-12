@@ -27,6 +27,7 @@ import {
   makeNumericProp,
   createNamespace,
   type ComponentInstance,
+  clamp,
 } from '../utils';
 import {
   cutString,
@@ -81,6 +82,8 @@ export const fieldSharedProps = {
   autofocus: Boolean,
   clearable: Boolean,
   maxlength: numericProp,
+  max: Number,
+  min: Number,
   formatter: Function as PropType<(value: string) => string>,
   clearIcon: makeStringProp('clear'),
   modelValue: makeNumericProp(''),
@@ -326,9 +329,23 @@ export default defineComponent({
       const limitDiffLen =
         getStringLength(originalValue) - getStringLength(value);
 
+      // https://github.com/youzan/vant/issues/13058
       if (props.type === 'number' || props.type === 'digit') {
         const isNumber = props.type === 'number';
         value = formatNumber(value, isNumber, isNumber);
+
+        if (
+          trigger === 'onBlur' &&
+          value !== '' &&
+          (props.min !== undefined || props.max !== undefined)
+        ) {
+          const adjustedValue = clamp(
+            +value,
+            props.min ?? -Infinity,
+            props.max ?? Infinity,
+          );
+          value = adjustedValue.toString();
+        }
       }
 
       let formatterDiffLen = 0;
@@ -510,6 +527,7 @@ export default defineComponent({
         enterkeyhint: props.enterkeyhint,
         spellcheck: props.spellcheck,
         'aria-labelledby': props.label ? `${id}-label` : undefined,
+        'data-allow-mismatch': 'attribute',
         onBlur,
         onFocus,
         onInput,
@@ -601,6 +619,7 @@ export default defineComponent({
           <label
             id={`${id}-label`}
             for={slots.input ? undefined : getInputId()}
+            data-allow-mismatch="attribute"
             onClick={(event: MouseEvent) => {
               // https://github.com/youzan/vant/issues/11831
               preventDefault(event);

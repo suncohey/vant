@@ -1,11 +1,15 @@
 # 更新日志
 
-### 提示
+### 重要提示
 
-当前文档为 Vant 4 的更新日志，其他版本请参考：
+**为了避免重复维护，降低维护成本。**
 
-- [Vant 2 更新日志](https://vant-ui.github.io/vant/v2/#/zh-CN/changelog)
-- [Vant 3 更新日志](https://vant-ui.github.io/vant/v3/#/zh-CN/changelog)
+**从 v4.9.0 开始，Vant 的更新日志统一发布在 [GitHub 的 Releases 页面](https://github.com/youzan/vant/releases)，当前页面将不再更新。**
+
+当前文档为 Vant v4.0.0 ~ v4.9.0 的的更新日志，其他版本请参考：
+
+- [Vant 2 更新日志](/vant/v2/#/zh-CN/changelog)
+- [Vant 3 更新日志](/vant/v3/#/zh-CN/changelog)
 
 ### 介绍
 
@@ -18,6 +22,47 @@ Vant 遵循 [Semver](https://semver.org/lang/zh-CN/) 语义化版本规范。
 - 主版本号：无固定的发布时间，包含不兼容更新和重大功能更新。
 
 ## 更新内容
+
+### v4.9.0
+
+`2024-05-02`
+
+#### 新功能 🎉
+
+- feat(Calendar)：添加 switch-mode 属性，由[@inottn](https://github.com/inottn) 贡献，在[#12836](https://github.com/youzan/vant/pull/12836)
+- feat(PickerGroup)：添加新属性 showToolbar，由[@ReinoFu](https://github.com/ReinoFu) 贡献，在[#12839](https://github.com/youzan/vant/pull/12839)
+- feat(CLI)：支持配置 Rsbuild，由[@chenjiahan](https://github.com/chenjiahan) 贡献，在[#12809](https://github.com/youzan/vant/pull/12809)
+
+#### Bug 修复 🐞
+
+- fix(cli)：修复 Vue SFC 样式绑定失败，由[@zoy-l](https://github.com/zoy-l) 贡献，在[#12799](https://github.com/youzan/vant/pull/12799)
+- fix(ImagePreview)：修复 swipeItem 可能为 undefined，由[@inottn](https://github.com/inottn) 贡献，在[#12818](https://github.com/youzan/vant/pull/12818)
+- fix(Highlight)：当 keywords 为空时正确渲染，由[@Jungzl](https://github.com/Jungzl) 贡献，在[#12829](https://github.com/youzan/vant/pull/12829)
+- fix(IndexBar)：当传入 sticky & stickyOffsetTop 时正确渲染激活锚点，由[@Jungzl](https://github.com/Jungzl) 贡献，在[#12837](https://github.com/youzan/vant/pull/12837)
+
+#### 文档 📖
+
+- docs: 移除所有 Gitee 链接，由[@chenjiahan](https://github.com/chenjiahan) 贡献，在[#12845](https://github.com/youzan/vant/pull/12845)
+- docs: 移除 gzip 大小徽章，由[@chenjiahan](https://github.com/chenjiahan) 贡献，在[#12847](https://github.com/youzan/vant/pull/12847)
+- docs: 修复 Rsbuild HTML 构建失败，由[@chenjiahan](https://github.com/chenjiahan) 贡献，在[#12848](https://github.com/youzan/vant/pull/12848)
+
+#### 其他更改
+
+- chore(deps)：升级依赖 terser 至 ^5.30.3，由[@renovate](https://github.com/renovate) 贡献，在[#12795](https://github.com/youzan/vant/pull/12795)
+- chore(deps)：升级依赖 eslint-plugin-vue 至 ^9.25.0，由[@renovate](https://github.com/renovate) 贡献，在[#12794](https://github.com/youzan/vant/pull/12794)
+- chore(deps)：更新所有补丁依赖，由[@renovate](https://github.com/renovate) 贡献，在[#12773](https://github.com/youzan/vant/pull/12773)
+- chore(workflow)：升级至 pnpm v9，由[@chenjiahan](https://github.com/chenjiahan) 贡献，在[#12808](https://github.com/youzan/vant/pull/12808)
+- chore：推送 github-pages-deploy-action[@v4](https://github.com/v4).6.0，由 @chenjiahan 贡献，在[#12810](https://github.com/youzan/vant/pull/12810)
+- chore(deps)：升级依赖 [@vitejs](https://github.com/vitejs)/plugin-vue 至 v5，由 @renovate 贡献，在[#12840](https://github.com/youzan/vant/pull/12840)
+- chore(deps)：升级依赖 commander 至 v12，由[@renovate](https://github.com/renovate) 贡献，在[#12841](https://github.com/youzan/vant/pull/12841)
+- chore(deps)：更新 actions/setup-node 行为至 v4，由[@renovate](https://github.com/renovate) 贡献，在[#12814](https://github.com/youzan/vant/pull/12814)
+- chore(deps)：更新 github/issue-labeler 行为至 v3.4，由[@renovate](https://github.com/renovate) 贡献，在[#12813](https://github.com/youzan/vant/pull/12813)
+- chore(deps)：更新 codecov/codecov-action 行为至 v4，由[@renovate](https://github.com/renovate) 贡献，在[#12815](https://github.com/youzan/vant/pull/12815)
+- chore(deps)：更新所有补丁依赖，由[@renovate](https://github.com/renovate) 贡献，在[#12812](https://github.com/youzan/vant/pull/12812)
+
+#### 新贡献者
+
+- [@ReinoFu](https://github.com/ReinoFu) 在[#12839](https://github.com/youzan/vant/pull/12839) 中首次贡献
 
 ### v4.8.11
 
@@ -1078,7 +1123,7 @@ Vant 遵循 [Semver](https://semver.org/lang/zh-CN/) 语义化版本规范。
 
 `2022-11-26`
 
-> 完整内容请移步：[「4.0 更新介绍」](https://vant-ui.github.io/vant/#/zh-CN/release-note-v4)
+> 完整内容请移步：[「4.0 更新介绍」](/vant/#/zh-CN/release-note-v4)
 
 **Feature**
 
